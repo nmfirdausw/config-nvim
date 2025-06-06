@@ -11,11 +11,17 @@ A modern Neovim configuration using [lazy.nvim](https://github.com/folke/lazy.nv
 ## Structure
 
 ```
-├── init.lua                 # Entry point, loads lazy configuration
+├── init.lua                 # Entry point, loads configurations
+├── lsp/
+│   └── lua_ls.lua          # LSP server configurations
 ├── lua/
 │   ├── configs/
-│   │   └── lazy.lua        # Lazy.nvim bootstrap and setup
-│   └── plugins/            # Plugin configurations directory
+│   │   ├── lazy.lua        # Lazy.nvim bootstrap and setup
+│   │   ├── lsp.lua         # Native LSP configuration
+│   │   └── options.lua     # Neovim options and settings
+│   └── plugins/
+│       ├── copilot.lua     # GitHub Copilot configuration
+│       └── treesitter.lua  # Treesitter syntax highlighting
 └── README.md
 ```
 
