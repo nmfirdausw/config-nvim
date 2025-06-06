@@ -4,3 +4,6 @@ vim.g.maplocalleader = " "
 
 -- Global border configuration
 vim.g.border = "rounded"
+
+-- System clipboard integration
+vim.opt.clipboard = "unnamedplus"
