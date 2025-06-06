@@ -36,3 +36,8 @@ vim.opt.incsearch = true
 vim.opt.inccommand = "split"
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
+
+-- Split behavior
+vim.opt.splitright = true
+vim.opt.splitbelow = true
+vim.opt.splitkeep = "screen"
