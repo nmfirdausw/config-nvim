@@ -21,3 +21,12 @@ vim.opt.expandtab = true
 vim.opt.autoindent = true
 vim.opt.smartindent = true
 vim.opt.wrap = false
+
+-- History and backup settings
+vim.opt.history = 1000
+vim.opt.undolevels = 10000
+vim.opt.swapfile = false
+vim.opt.backup = false
+vim.opt.writebackup = false
+vim.opt.undofile = true
+vim.opt.confirm = true
