@@ -16,4 +16,8 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 -- Set up lazy.nvim
-require("lazy").setup("plugins")
+require("lazy").setup("plugins", {
+  defaults = {
+    lazy = true,
+  },
+})
