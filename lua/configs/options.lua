@@ -36,6 +36,7 @@ vim.opt.incsearch = true
 vim.opt.inccommand = "split"
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
+vim.opt.hlsearch = true
 
 -- Split behavior
 vim.opt.splitright = true
@@ -48,3 +49,28 @@ vim.opt.foldenable = true
 vim.opt.foldlevel = 99
 vim.opt.foldlevelstart = 99
 vim.opt.foldmethod = "expr"
+
+-- UI and appearance
+vim.opt.list = true
+vim.opt.termguicolors = true
+vim.opt.background = "dark"
+vim.opt.cursorline = true
+vim.opt.cursorlineopt = "number"
+vim.opt.fillchars = { eob = " " }
+vim.opt.laststatus = 3
+
+-- Columns and status
+vim.opt.signcolumn = "no"
+vim.opt.scrolloff = 8
+
+-- Completion and editing
+vim.opt.completeopt = { "menu", "menuone", "noselect" }
+vim.opt.virtualedit = "block"
+vim.opt.wildmode = "longest:full,full"
+vim.opt.backspace = { "start", "eol", "indent" }
+vim.opt.isfname:append("@-@")
+
+-- Timing and interaction
+vim.opt.updatetime = 50
+vim.opt.timeoutlen = 300
+vim.opt.mouse = "a"
