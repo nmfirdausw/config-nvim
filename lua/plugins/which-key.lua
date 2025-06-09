@@ -16,8 +16,10 @@ return {
       { "<leader>s", desc = "Search" },
       { "<leader>f", desc = "Find" },
       { "<leader>g", desc = "Git", cond = Utils.gitdir() },
+      { "<leader>gh", desc = "Hunk", cond = Utils.gitdir() },
       { "<leader>t", desc = "Toggle" },
       { "<leader>u", desc = "UI" },
     },
   },
 }
+
