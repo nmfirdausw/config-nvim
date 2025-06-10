@@ -4,7 +4,7 @@ vim.api.nvim_create_autocmd("WinEnter", {
       return
     end
 
-    if vim.bo.buftype == "" then
+    if vim.bo.buftype == "" or vim.bo.buftype == "help" then
       -- Calculate available width for current window
       local normal_wins = {}
       for _, win in ipairs(vim.api.nvim_list_wins()) do
