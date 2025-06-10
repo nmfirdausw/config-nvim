@@ -8,7 +8,7 @@ return {
     open_fold_hl_timeout = 150,
     preview = {
       win_config = {
-        border = "rounded",
+        border = vim.g.border,
         winhighlight = "Normal:Normal",
         winblend = 0,
       },

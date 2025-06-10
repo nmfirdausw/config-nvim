@@ -8,11 +8,6 @@ vim.g.border = "rounded"
 -- System clipboard integration
 vim.opt.clipboard = "unnamedplus"
 
--- Line numbers
-vim.opt.number = true
-vim.opt.numberwidth = 1
-vim.opt.relativenumber = true
-
 -- Indentation and formatting
 vim.opt.tabstop = 2
 vim.opt.softtabstop = 2
@@ -44,7 +39,6 @@ vim.opt.splitbelow = true
 vim.opt.splitkeep = "screen"
 
 -- Folding
-vim.opt.foldcolumn = "1"
 vim.opt.foldenable = true
 vim.opt.foldlevel = 99
 vim.opt.foldlevelstart = 99
@@ -60,7 +54,6 @@ vim.opt.fillchars = { eob = " " }
 vim.opt.laststatus = 3
 
 -- Columns and status
-vim.opt.signcolumn = "no"
 vim.opt.scrolloff = 8
 
 -- Completion and editing

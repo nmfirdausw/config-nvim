@@ -12,17 +12,13 @@ M.picker = {
     local win_width = vim.fn.winwidth(0)
     local win_pos = vim.api.nvim_win_get_position(win_id)
     local term_width = vim.o.columns
-    local has_focus, focus = pcall(require, "focus")
     local height = vim.o.lines - vim.opt.cmdheight:get() - 1
 
     if win_pos[2] == 0 then
       local width = term_width - win_width
       if win_width >= term_width then
-        width = math.floor(win_width / 2)
-        if has_focus and not vim.g.focus_enabled then
-          local golden_width = math.floor(win_width / 1.618)
-          width = win_width - golden_width
-        end
+        local golden_width = math.floor(win_width / 1.618)
+        width = win_width - golden_width
       end
       return {
         preview = "main",
@@ -44,6 +40,7 @@ M.picker = {
       }
     else
       local width = win_pos[2]
+      print("width", width)
       return {
         preview = "main",
         layout = {
