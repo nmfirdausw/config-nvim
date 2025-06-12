@@ -1,2 +1,9 @@
--- Enable native LSP for Lua
-vim.lsp.enable({ "lua_ls" })
+vim.lsp.enable({
+  "csharp_ls",
+  "cssls",
+  "emmet_language_server",
+  "html",
+  "intelephense",
+  "lua_ls",
+  "tailwindcss",
+})
