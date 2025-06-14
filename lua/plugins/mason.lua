@@ -16,8 +16,10 @@ return {
     opts = {
       ensure_installed = {
         -- LSP
+        "intelephense",
         "lua-language-server",
         "omnisharp",
+        "tailwindcss-language-server",
 
         -- Formatters
         "stylua",

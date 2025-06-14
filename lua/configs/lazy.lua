@@ -23,4 +23,5 @@ require("lazy").setup("plugins", {
   ui = {
     border = vim.g.border,
   },
+  install = { colorscheme = { "nmfirdausw" } },
 })
