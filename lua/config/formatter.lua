@@ -53,6 +53,7 @@ return {
           return formatters
         end,
         css = { "prettier" },
+        fish = { "fish_indent" },
         html = { "prettier" },
         javascript = { "biome" },
         json = { "biome" },
