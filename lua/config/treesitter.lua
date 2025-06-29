@@ -1,9 +1,22 @@
 -- Parsers to install
 local parsers = {
+  "bash",
   "css",
+  "dockerfile",
   "html",
   "javascript",
+  "json",
+  "lua",
+  "markdown",
+  "markdown_inline",
   "php",
+  "python",
+  "ruby",
+  "sql",
+  "terraform",
+  "toml",
+  "typescript",
+  "yaml",
 }
 
 -- Automatically install the specified parsers

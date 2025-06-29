@@ -12,6 +12,7 @@ require("mason-lspconfig").setup {
     "ruff",
     "sqlls",
     "tailwindcss",
+    "taplo",
     "terraformls",
     "ts_ls",
     "yamlls",
