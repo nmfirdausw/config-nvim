@@ -1,4 +1,7 @@
 -- Global config
+-- Remap leader key
+vim.g.mapleader = " "
+vim.g.maplocalleader = "\\"
 vim.g.border = "rounded"
 
 -- System clipboard integration
