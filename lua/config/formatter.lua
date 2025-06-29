@@ -59,6 +59,15 @@ require("conform").setup({
 
       return formatters
     end,
+    css = { "prettier" },
+    html = { "prettier" },
+    markdown = { "prettier" },
+    python = { "black" },
+    sh = { "shfmt" },
+    sql = { "sqruff" },
+    terraform = { "terraform" },
+    toml = { "taplo" },
+    yaml = { "yamlfmt" },
   },
   formatters = {
     duster = {

@@ -11,7 +11,6 @@ local parsers = {
   "markdown_inline",
   "php",
   "python",
-  "ruby",
   "sql",
   "terraform",
   "toml",

@@ -1,5 +1,5 @@
 -- LSP to be installed with Mason
-require("mason-lspconfig").setup {
+require("mason-lspconfig").setup({
   ensure_installed = {
     "bashls",
     "cssls",
@@ -17,4 +17,4 @@ require("mason-lspconfig").setup {
     "ts_ls",
     "yamlls",
   },
-}
+})
