@@ -9,6 +9,7 @@ return {
       "html",
       "intelephense",
       "jsonls",
+      "lemminx",
       "lua_ls",
       "ruff",
       "sqlls",
