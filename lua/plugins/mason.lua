@@ -3,9 +3,13 @@ return {
   lazy = false,
   opts = {},
   dependencies = {
-    { 
+    {
       "mason-org/mason.nvim",
-      opts = {},
+      opts = {
+        ui = {
+          border = vim.g.border,
+        },
+      },
     },
     { "neovim/nvim-lspconfig" },
   },
