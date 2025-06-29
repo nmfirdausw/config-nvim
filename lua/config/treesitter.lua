@@ -1,4 +1,3 @@
--- Parsers to install
 local parsers = {
   "bash",
   "css",
@@ -18,10 +17,8 @@ local parsers = {
   "yaml",
 }
 
--- Automatically install the specified parsers
 require("nvim-treesitter").install(parsers)
 
--- Automatically start Treesitter
 vim.api.nvim_create_autocmd("FileType", {
   pattern = parsers,
   callback = function()
