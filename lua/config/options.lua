@@ -1,3 +1,6 @@
+-- Global config
+vim.g.border = "rounded"
+
 -- System clipboard integration
 vim.opt.clipboard = "unnamedplus"
 
