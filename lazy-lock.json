@@ -1,4 +1,5 @@
 {
+  "copilot.lua": { "branch": "master", "commit": "46f4b7d026cba9497159dcd3e6aa61a185cb1c48" },
   "lazy.nvim": { "branch": "main", "commit": "6c3bda4aca61a13a9c63f1c1d1b16b9d3be90d7a" },
   "nvim-treesitter": { "branch": "main", "commit": "5948977de47457de10f2b0fb55d851cdf988e2dc" }
 }
