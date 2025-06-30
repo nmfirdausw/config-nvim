@@ -1,6 +1,9 @@
 return {
   "nvzone/showkeys",
   cmd = "ShowkeysToggle",
+  keys = {
+    { "<leader>tk", "<cmd>ShowkeysToggle<cr>", desc = "Showkeys" },
+  },
   opts = {
     winopts = {
       border = vim.g.border,
