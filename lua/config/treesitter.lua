@@ -1,5 +1,6 @@
 local parsers = {
   "bash",
+  "blade",
   "c",
   "css",
   "diff",
