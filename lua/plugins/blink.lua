@@ -1,6 +1,7 @@
 return {
   {
     "saghen/blink.cmp",
+    version = "*",
     event = { "InsertEnter", "CmdlineEnter" },
     dependencies = {
       "rafamadriz/friendly-snippets",
@@ -9,7 +10,7 @@ return {
         opts = {},
       },
     },
-    build = "cargo build --release",
+    -- build = "cargo build --release",
     opts_extend = { "sources.default" },
     opts = {
       keymap = {
@@ -118,9 +119,10 @@ return {
   },
   {
     "saghen/blink.pairs",
+    version = "*",
     event = "InsertEnter",
     dependencies = "saghen/blink.download",
-    build = "cargo build --release",
+    -- build = "cargo build --release",
     opts = {
       mappings = {
         enabled = true,
