@@ -12,6 +12,7 @@ return {
       "lemminx",
       "lua_ls",
       "ruff",
+      "rust_analyzer",
       "sqlls",
       "tailwindcss",
       "terraformls",

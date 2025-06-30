@@ -61,6 +61,7 @@ return {
         lua = { "stylua" },
         markdown = { "prettier" },
         python = { "black" },
+        rust = { "rustfmt" },
         sh = { "shfmt" },
         sql = { "sqruff" },
         terraform = { "terraform" },
