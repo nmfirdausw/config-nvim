@@ -5,10 +5,6 @@ return {
     event = { "InsertEnter", "CmdlineEnter" },
     dependencies = {
       "rafamadriz/friendly-snippets",
-      {
-        "onsails/lspkind.nvim",
-        opts = {},
-      },
     },
     -- build = "cargo build --release",
     opts_extend = { "sources.default" },
@@ -34,7 +30,6 @@ return {
               kind_icon = {
                 ellipsis = false,
                 text = function(ctx)
-                  local lspkind = require("lspkind")
                   local icon = ctx.kind_icon
                   if vim.tbl_contains({ "Path" }, ctx.source_name) then
                     local dev_icon, _ = require("nvim-web-devicons").get_icon(ctx.label)
@@ -44,16 +39,12 @@ return {
                     if string.sub(ctx.label, -1) == "/" then
                       icon = "󰝰 "
                     end
-                  else
-                    icon = lspkind.symbolic(ctx.kind, {
-                      mode = "symbol",
-                    })
                   end
 
                   return icon .. ctx.icon_gap
                 end,
                 highlight = function(ctx)
-                  local hl = "BlinkCmpKind" .. ctx.kind
+                  local hl = ctx.kind_hl
                   if vim.tbl_contains({ "Path" }, ctx.source_name) then
                     local dev_icon, dev_hl = require("nvim-web-devicons").get_icon(ctx.label)
                     if dev_icon then
