@@ -33,3 +33,9 @@ vim.opt.splitright = true
 vim.opt.number = true
 vim.opt.numberwidth = 1
 vim.opt.relativenumber = true
+
+-- Folding
+vim.opt.foldenable = true
+vim.opt.foldlevel = 99
+vim.opt.foldlevelstart = 99
+vim.opt.foldmethod = "expr"
