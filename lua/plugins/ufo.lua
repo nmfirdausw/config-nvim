@@ -6,34 +6,6 @@ return {
   },
   keys = {
     {
-      "<leader>zR",
-      function()
-        require("ufo").openAllFolds()
-      end,
-      desc = "Open All Folds",
-    },
-    {
-      "<leader>zM",
-      function()
-        require("ufo").closeAllFolds()
-      end,
-      desc = "Close All Folds",
-    },
-    {
-      "<leader>zr",
-      function()
-        require("ufo").openFoldsExceptKinds()
-      end,
-      desc = "Open Folds Except Kinds",
-    },
-    {
-      "<leader>zm",
-      function()
-        require("ufo").closeFoldsWith(0)
-      end,
-      desc = "Close Folds With 0",
-    },
-    {
       "K",
       function()
         local winid = require("ufo").peekFoldedLinesUnderCursor()
@@ -41,7 +13,7 @@ return {
           vim.lsp.buf.hover()
         end
       end,
-      desc = "Peek Folded Lines Under Cursor",
+      desc = "Hover or Peek",
     },
   },
   opts = {
