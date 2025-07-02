@@ -12,6 +12,8 @@ vim.opt.cursorline = true
 vim.opt.cursorlineopt = "number"
 vim.opt.fillchars = { eob = " " }
 vim.opt.laststatus = 3
+vim.opt.listchars = { trail = "·" }
+vim.api.nvim_set_hl(0, "Whitespace", { link = "DiagnosticInfo" })
 
 -- System clipboard integration
 vim.opt.clipboard = "unnamedplus"
