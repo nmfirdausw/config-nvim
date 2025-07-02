@@ -1,12 +1,5 @@
-vim.opt.signcolumn = "yes"
-vim.opt.number = true
-vim.opt.numberwidth = 1
-vim.opt.foldenable = true
-vim.opt.foldcolumn = "1"
-vim.opt.statuscolumn = "%l %s%C "
-
 local statuscolumn = function()
-  local statuscolumn = "%=%r%l "
+  local statuscolumn = "%=%4r%4l  "
   local lnum = vim.v.lnum
   local signs_hl = ""
   local bufnr = vim.api.nvim_get_current_buf()
@@ -23,20 +16,20 @@ local statuscolumn = function()
 
   if vim.fn.foldlevel(lnum) > 0 then
     if vim.fn.foldclosed(lnum) ~= -1 then
-      return statuscolumn .. "%#" .. signs_hl .. "#+ "
+      return statuscolumn .. "%#" .. signs_hl .. "#+  "
     end
     if vim.fn.foldlevel(lnum) > vim.fn.foldlevel(lnum - 1) then
       if #signs > 0 and not signs[1].group:match("gitsigns_signs_") then
-        return statuscolumn .. "%s"
+        return statuscolumn .. "%s "
       end
-      return statuscolumn .. "%#" .. signs_hl .. "#- "
+      return statuscolumn .. "%#" .. signs_hl .. "#-  "
     end
   end
 
   if #signs > 0 then
-    return statuscolumn .. "%s"
+    return statuscolumn .. "%s "
   end
-  return statuscolumn .. "%#" .. signs_hl .. "#│ "
+  return statuscolumn .. "%#" .. signs_hl .. "#│  "
 end
 
 vim.o.statuscolumn = "%{%v:lua._G.StatusColumn()%}"

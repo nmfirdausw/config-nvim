@@ -4,6 +4,15 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 vim.g.border = "rounded"
 
+-- UI and appearance
+vim.opt.list = true
+vim.opt.termguicolors = true
+vim.opt.background = "dark"
+vim.opt.cursorline = true
+vim.opt.cursorlineopt = "number"
+vim.opt.fillchars = { eob = " " }
+vim.opt.laststatus = 3
+
 -- System clipboard integration
 vim.opt.clipboard = "unnamedplus"
 
@@ -31,7 +40,6 @@ vim.opt.splitright = true
 
 -- Number column
 vim.opt.number = true
-vim.opt.numberwidth = 1
 vim.opt.relativenumber = true
 
 -- Folding
