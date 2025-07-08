@@ -1,7 +1,7 @@
 return {
   "lewis6991/gitsigns.nvim",
   event = "BufReadPre",
-  enabled = Utils.gitdir(),
+  enabled = Utils.is_git_dir(),
   opts = {
     attach_to_untracked = true,
     signs = {

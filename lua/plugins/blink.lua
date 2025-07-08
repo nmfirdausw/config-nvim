@@ -102,7 +102,14 @@ return {
         },
       },
       sources = {
-        default = { "laravel", "lsp", "path", "snippets", "buffer" },
+        default = function()
+          local Utils = require("config.utils")
+          local sources = { "lsp", "path", "snippets", "buffer" }
+          if Utils.is_laravel_project() then
+            table.insert(sources, 1, "laravel")
+          end
+          return sources
+        end,
         providers = {
           lsp = {
             opts = { tailwind_color_icon = " " },
