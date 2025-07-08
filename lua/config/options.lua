@@ -15,8 +15,23 @@ vim.opt.laststatus = 3
 vim.opt.listchars = { trail = "·" }
 vim.api.nvim_set_hl(0, "Whitespace", { link = "DiagnosticInfo" })
 
--- System clipboard integration
-vim.opt.clipboard = "unnamedplus"
+-- Scrolling
+vim.opt.scrolloff = 8
+vim.opt.sidescrolloff = 8
+
+-- Behavior
+vim.opt.autochdir = false
+vim.obt.encoding = "utf-8"
+vim.opt.backspace = { "indent", "eol", "start" }
+vim.opt.clipboard:append("unnamedplus")
+vim.opt.errorbells = false
+vim.opt.hidden = true
+vim.opt.iskeyword:append("-")
+vim.opt.iskeyword:append("_")
+vim.opt.modifiabre = true
+vim.opt.mouse = "a"
+vim.opt.path:append("**")
+vim.opt.selection = "exclusive"
 
 -- Indentation and formatting
 vim.opt.autoindent = true
