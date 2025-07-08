@@ -21,7 +21,7 @@ vim.opt.sidescrolloff = 8
 
 -- Behavior
 vim.opt.autochdir = false
-vim.obt.encoding = "utf-8"
+vim.opt.encoding = "utf-8"
 vim.opt.backspace = { "indent", "eol", "start" }
 vim.opt.clipboard:append("unnamedplus")
 vim.opt.errorbells = false
