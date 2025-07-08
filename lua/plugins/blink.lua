@@ -7,7 +7,6 @@ return {
       "rafamadriz/friendly-snippets",
     },
     -- build = "cargo build --release",
-    opts_extend = { "sources.default" },
     opts = {
       keymap = {
         preset = "enter",
@@ -25,7 +24,12 @@ return {
           auto_show = true,
           border = "rounded",
           draw = {
-            columns = { { "kind_icon", "label", "label_description", gap = 1 } },
+            columns = {
+              { "kind_icon" },
+              { "label", "label_description", gap = 1 },
+              { "kind" },
+              { "source_name" },
+            },
             components = {
               kind_icon = {
                 ellipsis = false,
@@ -98,10 +102,23 @@ return {
         },
       },
       sources = {
-        default = { "lsp", "path", "snippets", "buffer" },
+        default = { "laravel", "lsp", "path", "snippets", "buffer" },
         providers = {
           lsp = {
             opts = { tailwind_color_icon = " " },
+          },
+          laravel = {
+            name = "Laravel",
+            module = "laravel.blink_source",
+            enabled = function()
+              return vim.bo.filetype == "php" or vim.bo.filetype == "blade"
+            end,
+            -- kind = "Laravel",
+            score_offset = 1000,
+            min_keyword_length = 1,
+          },
+          cmdline = {
+            min_keyword_length = 2,
           },
         },
       },
